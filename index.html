@@ -1,164 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitamin Deficiency Finder</title>
-    <style>
-        body {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('background.jpg') center/cover no-repeat fixed;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        #userInfoForm, #symptomForm, #result {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"], input[type="checkbox"], button {
-            margin-bottom: 10px;
-            padding: 5px;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-        }
-
-        input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        button {
-            cursor: pointer;
-            background: linear-gradient(to bottom, #04c2c9, #005667);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-            background: linear-gradient(to bottom, #057a7d, #004c4f);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        #result {
-            text-align: center;
-        }
-
-        #userName {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="vita.css">
 </head>
+
 <body>
     <h1>Vitamin Deficiency Finder</h1>
-    
-    <form id="userInfoForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-        <button type="button" id="submitName">Submit</button>
-    </form>
-    
-    <div id="userGreeting" style="display: none;"></div>
-    
-    <form id="symptomForm" style="display: none;">
-        <h2>Hello <span id="userName"></span>! Please fill in the following details:</h2>
+    <h3>Symptoms:</h3>
+    <form id="symptomForm">
         
-        <h3>Symptoms:</h3>
+        <label class="checkbox-label">
+            Night blindness
+            <input type="checkbox" name="symptoms" value="night_blindness">
+        </label>
         
-        <label>Night blindness:</label>
-        <input type="checkbox" name="symptoms" value="night_blindness">
+        <label class="checkbox-label">
+            Dry eyes
+            <input type="checkbox" name="symptoms" value="dry_eyes">
+        </label>
         
-        <label>Dry eyes:</label>
-        <input type="checkbox" name="symptoms" value="dry_eyes">
+        <label class="checkbox-label">
+            Skin problems like acne and rashes
+            <input type="checkbox" name="symptoms" value="skin_problems">
+        </label>
         
-        <label>Skin problems like acne and rashes:</label>
-        <input type="checkbox" name="symptoms" value="skin_problems">
+        <label class="checkbox-label">
+            Fatigue
+            <input type="checkbox" name="symptoms" value="fatigue">
+        </label>
         
-        <label>Fatigue:</label>
-        <input type="checkbox" name="symptoms" value="fatigue">
+        <label class="checkbox-label">
+            Confusion
+            <input type="checkbox" name="symptoms" value="confusion">
+        </label>
         
-        <label>Confusion:</label>
-        <input type="checkbox" name="symptoms" value="confusion">
+        <label class="checkbox-label">
+            Muscle weakness
+            <input type="checkbox" name="symptoms" value="muscle_weakness">
+        </label>
         
-        <label>Muscle weakness:</label>
-        <input type="checkbox" name="symptoms" value="muscle_weakness">
+        <label class="checkbox-label">
+            Cracked lips
+            <input type="checkbox" name="symptoms" value="cracked_lips">
+        </label>
+        
+        <label class="checkbox-label">
+            Red swollen tongue
+            <input type="checkbox" name="symptoms" value="red_swollen_tongue">
+        </label>
+        
+        <label class="checkbox-label">
+            Light sensitivity
+            <input type="checkbox" name="symptoms" value="light_sensitivity">
+        </label>
+        
+        <label class="checkbox-label">
+            Numbness and tingling
+            <input type="checkbox" name="symptoms" value="numbness_tingling">
+        </label>
+        
+        <label class="checkbox-label">
+            Digestive issues
+            <input type="checkbox" name="symptoms" value="digestive_issues">
+        </label>
+        
+        <label class="checkbox-label">
+            Skin lesions
+            <input type="checkbox" name="symptoms" value="skin_lesions">
+        </label>
+        
+        <label class="checkbox-label">
+            Dementia
+            <input type="checkbox" name="symptoms" value="dementia">
+        </label>
+        
+        <label class="checkbox-label">
+            Irritability
+            <input type="checkbox" name="symptoms" value="irritability">
+        </label>
+        
+        <label class="checkbox-label">
+            Depression
+            <input type="checkbox" name="symptoms" value="depression">
+        </label>
+        
+        <label class="checkbox-label">
+            Hair loss
+            <input type="checkbox" name="symptoms" value="hair_loss">
+        </label>
+        
+        <label class="checkbox-label">
+            Rash around eyes, nose, mouth
+            <input type="checkbox" name="symptoms" value="rash_around_eyes_nose_mouth">
+        </label>
+        
+        <label class="checkbox-label">
+            Megaloblastic anemia
+            <input type="checkbox" name="symptoms" value="megaloblastic_anemia">
+        </label>
+        
+        <label class="checkbox-label">
+            Sore tongue
+            <input type="checkbox" name="symptoms" value="sore_tongue">
+        </label>
+        
+        <label class="checkbox-label">
+            Nerve damage
+            <input type="checkbox" name="symptoms" value="nerve_damage">
+        </label>
+        
+        <label class="checkbox-label">
+            Bleeding gums
+            <input type="checkbox" name="symptoms" value="bleeding_gums">
+        </label>
+        
+        <label class="checkbox-label">
+            Slow wound healing
+            <input type="checkbox" name="symptoms" value="slow_wound_healing">
+        </label>
+        
+        <label class="checkbox-label">
+            Weakened immunity
+            <input type="checkbox" name="symptoms" value="weakened_immunity">
+        </label>
+        
+        <label class="checkbox-label">
+            Bone/joint pain
+            <input type="checkbox" name="symptoms" value="bone_joint_pain">
+        </label>
+        
+        <label class="checkbox-label">
+            Muscle weakness
+            <input type="checkbox" name="symptoms" value="muscle_weakness_vitamin_d">
+        </label>
+        
+        <label class="checkbox-label">
+            Depression
+            <input type="checkbox" name="symptoms" value="depression_vitamin_d">
+        </label>
+        <!-- Add more checkboxes for any additional symptoms you have -->
         
         <!-- Add more checkboxes for the remaining symptoms -->
 
         <button type="button" id="findDeficiency">Find Deficiency</button>
     </form>
-    
-    <div id="result" style="display: none;">
+
+    <div id="result">
         <h2>Deficiency Results:</h2>
         <p id="deficiencyList"></p>
     </div>
-    
-    <script>
-        const submitNameBtn = document.getElementById("submitName");
-        const userGreeting = document.getElementById("userGreeting");
-        const userNameSpan = document.getElementById("userName");
-        const symptomForm = document.getElementById("symptomForm");
-        const findDeficiencyBtn = document.getElementById("findDeficiency");
-        const resultDiv = document.getElementById("result");
-        const deficiencyList = document.getElementById("deficiencyList");
 
-        submitNameBtn.addEventListener("click", () => {
-            const name = document.getElementById("name").value;
-            userNameSpan.textContent = name;
-            userGreeting.style.display = "block";
-            symptomForm.style.display = "block";
-        });
-
-        findDeficiencyBtn.addEventListener("click", () => {
-            const selectedSymptoms = document.querySelectorAll('input[name="symptoms"]:checked');
-            const deficiencies = [];
-
-            selectedSymptoms.forEach(symptom => {
-                const symptomValue = symptom.value;
-                const relatedDeficiency = symptomDeficiencyMap[symptomValue] || "Unknown deficiency";
-                deficiencies.push(relatedDeficiency);
-            });
-
-            if (deficiencies.length === 0) {
-                alert("Please select at least one symptom.");
-                return;
-            }
-
-            deficiencyList.textContent = "Possible deficiencies: " + deficiencies.join(", ");
-            resultDiv.style.display = "block";
-        });
-
-        const symptomDeficiencyMap = {
-            night_blindness: "Vitamin A deficiency",
-            dry_eyes: "Vitamin A deficiency",
-            skin_problems: "Vitamin A deficiency",
-            fatigue: "Vitamin B1 deficiency",
-            confusion: "Vitamin B1 deficiency",
-            muscle_weakness: "Vitamin B1 deficiency",
-            cracked_lips: "Vitamin B2 deficiency",
-            red_swollen_tongue: "Vitamin B2 deficiency",
-            light_sensitivity: "Vitamin B2 deficiency",
-            // ... add more mappings ...
-        };
-    </script>
+    <script src="vita.js"></script>
 </body>
+
 </html>

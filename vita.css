@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('background.jpg') center/cover no-repeat fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+#symptomForm,
+#result {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    overflow: auto;
+    max-height: 400px;
+    position: relative;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #68c1c7;
+    box-shadow: #7f888a;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#symptomForm::-webkit-scrollbar {
+    width: 5px;
+}
+
+#symptomForm::-webkit-scrollbar-thumb {
+    background-color: #68c1c7;
+    box-shadow: #7f888a;
+    border-radius: 10px;
+}
+
+#symptomForm::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="checkbox"],
+button {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #04c2c9, #005667);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #057a7d, #004c4f);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#result {
+    text-align: center;
+}
+
+#userName {
+    font-weight: bold;
+}
