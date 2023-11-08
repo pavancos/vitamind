@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin B3:</h2>
+    <div id="infoDiv">
+        Vitamin B3, also known as niacin, is a water-soluble vitamin crucial for energy production and overall body function. It aids in the metabolism of fats, carbohydrates, and proteins. Niacin plays a significant role in supporting a healthy nervous system and skin. It's essential for DNA repair and plays a part in lowering cholesterol levels .
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Chicken</li>
+              <li>Beaf</li>
+              <li>Turkey</li>
+              <li>Fish(Salmon,Tuna)</li>
+            </ul>
+          </li>
+          <li><strong>Grains :</strong>
+            <ul id="items">
+              <li>Brown Rice</li>
+              <li>Wheat</li>
+              <li>Barley</li>
+            </ul>
+          </li>
+          <li><strong>Nuts:</strong>
+            <ul id="items">
+              <li>Peanuts</li>
+              <li>Beans</li>
+              <li>Lentils</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

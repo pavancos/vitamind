@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin B6:</h2>
+    <div id="infoDiv">
+        Vitamin B6, also known as pyridoxine, is a water-soluble vitamin.<br> It plays a key role in metabolism, aiding
+        in the breakdown of proteins, carbohydrates, and fats.Vitamin B6 is crucial for brain development and function,
+        as well as for maintaining a healthy immune system. It also helps in the formation of red blood cells and
+        supports nerve health.
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Meat(Chicken,Turkey,Beef,Pork)</li>
+              <li>Fish</li>
+              <li>Eggs(particularly the yolk)</li>
+            </ul>
+          </li>
+          <li><strong>Dairy Products:</strong>
+            <ul id="items">
+              <li>Milk</li>
+              <li>Cheese</li>
+            </ul>
+          </li>
+          <li><strong>Whole Grains:</strong>
+            <ul id="items">
+              <li>Brown Rice</li>
+              <li>Wheat</li>
+              <li>Oats</li>
+            </ul>
+          </li>
+          <li><strong>Vegetables:</strong>
+            <ul id="items">
+              <li>Spinach</li>
+              <li>Potatoes</li>
+              <li>Peas</li>
+            </ul>
+          </li>
+          <li><strong>Fruits:</strong>
+            <ul id="items">
+              <li>Banana</li>
+              <li>Avacodos</li>
+              <li>Watermelon</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

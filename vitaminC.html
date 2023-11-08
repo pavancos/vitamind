@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin C:</h2>
+    <div id="infoDiv">
+        Vitamin C, also known as ascorbic acid, is a water-soluble vitamin essential for various bodily functions.Vitamin C is necessary for the synthesis of collagen, a protein that is important for the skin, blood vessels,bones, and tendons.<br> It helps wounds heal and is essential for maintaining the integrity of gums and
+        teeth.
+      <div class="Food">
+        <h3>Food Sources:</h3>
+        <ul id="Food">
+          <li><strong>Fruits:</strong>
+            <ul id="items">
+              <li>Oranges</li>
+              <li>Strawberries</li>
+              <li>Kiwi</li>
+              <li>Guava</li>
+              <li>Mangoes</li>
+              <li>PineApples</li>
+              <li>Papaya</li>
+              <li>Lemons</li>
+              <li>Berries</li>
+            </ul>
+          </li>
+          <li><strong>Vegetables:</strong>
+            <ul id="items">
+              <li>Potatoes</li>
+              <li>Broccoli</li>
+              <li>Spinach</li>
+              <li>Tomatoes</li>
+              <li>CauliFlower</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+</html>

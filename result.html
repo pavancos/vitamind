@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title> 
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="openIndex()"></button>
+  </div>
+  <div id="Box">
+    <div id="stickyDiv">
+      <h3 id="pagetitle">Possible Deficiency :</h3>
+    </div>
+    <div id="defDiv" name="vitaminA" style="display: none;">
+      <a href="vitaminA.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin A</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB" style="display: none;">
+      <a href="vitaminB.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB1" style="display: none;">
+      <a href="vitaminB1.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B1</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB2" style="display: none;">
+      <a href="vitaminB2.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B2</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB3" style="display: none;">
+      <a href="vitaminB3.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B3</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB5" style="display: none;">
+      <a href="vitaminB5.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B5</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB6" style="display: none;">
+      <a href="vitaminB6.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B6</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB7" style="display: none;">
+      <a href="vitaminB7.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B7</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB9" style="display: none;">
+      <a href="vitaminB9.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B9</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminB12" style="display: none;">
+      <a href="vitaminB12.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin B12</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminC" style="display: none;">
+      <a href="vitaminC.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin C</h4>
+      </a>
+    </div>
+
+    <div id="defDiv" name="vitaminD" style="display: none;">
+      <a href="vitaminD.html" class="infoLinks" target="_blank">
+        <h4 id="vitamin_A">Vitamin D</h4>
+      </a>
+    </div>
+
+  </div>
+  <script type="module" src="result.js"></script>
+  <script>
+    function openIndex() {
+      window.close();
+    }
+  </script>
+  <script>
+    window.addEventListener("orientationchange", function () {
+      var orientation = window.orientation;
+
+      if (orientation === 90 || orientation === -90) {
+        // Device is in landscape mode; force it back to portrait
+        screen.orientation.lock("portrait");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin B2:</h2>
+    <div id="infoDiv">
+        Vitamin B2, also known as riboflavin. It is a water-soluble vitamin essential for various bodily functions. It plays a vital role in energy production, aiding in the metabolism of fats, carbohydrates, and proteins. Riboflavin is crucial for maintaining healthy skin, eyes, and nerve function. It also acts as an antioxidant, helping to protect cells from oxidative stress .
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Beaf</li>
+              <li>Pork</li>
+              <li>Lamb</li>
+              <li>Egg</li>
+            </ul>
+          </li>
+          <li><strong>Green Leafy Vegetables:</strong>
+            <ul id="items">
+              <li>Spinach</li>
+              <li>Broccoli</li>
+              <li>Asparagus</li>
+            </ul>
+          </li>
+          <li><strong>Dairy Products:</strong>
+            <ul id="items">
+              <li>Milk</li>
+              <li>Cheese</li>
+              <li>Yogurt</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

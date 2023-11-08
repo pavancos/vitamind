@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin E:</h2>
+    <div id="infoDiv">
+        Vitamin E is a fat-soluble antioxidant. Vitamin E acts as an antioxidant, protecting cells from damage caused by free radicals.
+        Vitamin E supports the immune system's function, helps in maintaining healthy skin and eyes . 
+        Vitamin E may contribute to heart health and neurological health.Vitamin E plays a role in maintaining immune system through mucous membranes, which are the body's first line of defense against pathogens.
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Vegetables Oils:</strong>
+            <ul id="items">
+              <li>Sunflower Oil</li>
+              <li>Safflower Oil</li>
+              <li>Wheat germ Oil</li>
+            </ul>
+          </li>
+          <li><strong>Nuts:</strong>
+            <ul id="items">
+              <li>Almonds</li>
+              <li>Hazelnuts</li>
+              <li>Seeds</li>
+              <li>cereals</li>
+            </ul>
+          </li>
+          <li><strong>Fruits and Vegetables:</strong>
+            <ul id="items">
+              <li> Avocados</li>
+              <li>Kiwifruit</li>
+              <li>Spinach</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

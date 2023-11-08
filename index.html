@@ -1,160 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitamin Deficiency Finder</title>
-    <link rel="stylesheet" href="vita.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <h1>Vitamin Deficiency Finder</h1>
-    <h3>Symptoms:</h3>
-    <form id="symptomForm">
-        
-        <label class="checkbox-label">
-            Night blindness
-            <input type="checkbox" name="symptoms" value="night_blindness">
-        </label>
-        
-        <label class="checkbox-label">
-            Dry eyes
-            <input type="checkbox" name="symptoms" value="dry_eyes">
-        </label>
-        
-        <label class="checkbox-label">
-            Skin problems like acne and rashes
-            <input type="checkbox" name="symptoms" value="skin_problems">
-        </label>
-        
-        <label class="checkbox-label">
-            Fatigue
-            <input type="checkbox" name="symptoms" value="fatigue">
-        </label>
-        
-        <label class="checkbox-label">
-            Confusion
-            <input type="checkbox" name="symptoms" value="confusion">
-        </label>
-        
-        <label class="checkbox-label">
-            Muscle weakness
-            <input type="checkbox" name="symptoms" value="muscle_weakness">
-        </label>
-        
-        <label class="checkbox-label">
-            Cracked lips
-            <input type="checkbox" name="symptoms" value="cracked_lips">
-        </label>
-        
-        <label class="checkbox-label">
-            Red swollen tongue
-            <input type="checkbox" name="symptoms" value="red_swollen_tongue">
-        </label>
-        
-        <label class="checkbox-label">
-            Light sensitivity
-            <input type="checkbox" name="symptoms" value="light_sensitivity">
-        </label>
-        
-        <label class="checkbox-label">
-            Numbness and tingling
-            <input type="checkbox" name="symptoms" value="numbness_tingling">
-        </label>
-        
-        <label class="checkbox-label">
-            Digestive issues
-            <input type="checkbox" name="symptoms" value="digestive_issues">
-        </label>
-        
-        <label class="checkbox-label">
-            Skin lesions
-            <input type="checkbox" name="symptoms" value="skin_lesions">
-        </label>
-        
-        <label class="checkbox-label">
-            Dementia
-            <input type="checkbox" name="symptoms" value="dementia">
-        </label>
-        
-        <label class="checkbox-label">
-            Irritability
-            <input type="checkbox" name="symptoms" value="irritability">
-        </label>
-        
-        <label class="checkbox-label">
-            Depression
-            <input type="checkbox" name="symptoms" value="depression">
-        </label>
-        
-        <label class="checkbox-label">
-            Hair loss
-            <input type="checkbox" name="symptoms" value="hair_loss">
-        </label>
-        
-        <label class="checkbox-label">
-            Rash around eyes, nose, mouth
-            <input type="checkbox" name="symptoms" value="rash_around_eyes_nose_mouth">
-        </label>
-        
-        <label class="checkbox-label">
-            Megaloblastic anemia
-            <input type="checkbox" name="symptoms" value="megaloblastic_anemia">
-        </label>
-        
-        <label class="checkbox-label">
-            Sore tongue
-            <input type="checkbox" name="symptoms" value="sore_tongue">
-        </label>
-        
-        <label class="checkbox-label">
-            Nerve damage
-            <input type="checkbox" name="symptoms" value="nerve_damage">
-        </label>
-        
-        <label class="checkbox-label">
-            Bleeding gums
-            <input type="checkbox" name="symptoms" value="bleeding_gums">
-        </label>
-        
-        <label class="checkbox-label">
-            Slow wound healing
-            <input type="checkbox" name="symptoms" value="slow_wound_healing">
-        </label>
-        
-        <label class="checkbox-label">
-            Weakened immunity
-            <input type="checkbox" name="symptoms" value="weakened_immunity">
-        </label>
-        
-        <label class="checkbox-label">
-            Bone/joint pain
-            <input type="checkbox" name="symptoms" value="bone_joint_pain">
-        </label>
-        
-        <label class="checkbox-label">
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu"></button>
+  </div>
+  <!-- <div class="where">-->
+  <div class="formB">
+    <h3 class="pagehead">what do you experience:</h3>
+    <!-- <form id="partinput">
+      <input id="inputPart" type="search"></input>
+      <input id="filterbtn" type="image" src="img/arrowbtn.svg" alt="Submit">
+    </form> -->
+    <!--    <input id="filterbtn" type="submit" value="img/arrowbtn.svg"></input> -->
+    <div class="formDiv">
+      <div id="formSymptom">
+        <form id="symForm">
+          
+          <div class="checkWrap">
+              <input type="checkbox" id="night_blindness" name="symptoms" value="night_blindness">
+              <label class="checkbox-label" for="night_blindness">Night blindness</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="dry_eyes" name="symptoms" value="dry_eyes">
+              <label class="checkbox-label" for="dry_eyes">Dry eyes</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="skin_problems" name="symptoms" value="skin_problems">
+              <label class="checkbox-label" for="skin_problems">Acne and Rashes</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="fatigue" name="symptoms" value="fatigue">
+              <label class="checkbox-label" for="fatigue">Fatigue</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="confusion" name="symptoms" value="confusion">
+              <label class="checkbox-label" for="confusion">Confusion</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="muscle_weakness" name="symptoms" value="muscle_weakness">
+              <label class="checkbox-label" for="muscle_weakness">Weakness</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="cracked_lips" name="symptoms" value="cracked_lips">
+              <label class="checkbox-label" for="cracked_lips">Cracked lips</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="red_swollen_tongue" name="symptoms" value="red_swollen_tongue">
+              <label class="checkbox-label" for="red_swollen_tongue">Swollen tongue</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="light_sensitivity" name="symptoms" value="light_sensitivity">
+              <label class="checkbox-label" for="light_sensitivity">Light sensitivity</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="numbness_tingling" name="symptoms" value="numbness_tingling">
+              <label class="checkbox-label" for="numbness_tingling">Numbness</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="numbness_tingling" name="symptoms" value="numbness_tingling">
+              <label class="checkbox-label" for="numbness_tingling">Tingling</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="digestive_issues" name="symptoms" value="digestive_issues">
+              <label class="checkbox-label" for="digestive_issues">Digestive issues</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="skin_lesions" name="symptoms" value="skin_lesions">
+              <label class="checkbox-label" for="skin_lesions">Skin lesions</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="dementia" name="symptoms" value="dementia">
+              <label class="checkbox-label" for="dementia">Dementia</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="irritability" name="symptoms" value="irritability">
+              <label class="checkbox-label" for="irritability">Irritability</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="depression" name="symptoms" value="depression">
+              <label class="checkbox-label" for="depression">Depression</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="hair_loss" name="symptoms" value="hair_loss">
+              <label class="checkbox-label" for="hair_loss">Hair loss</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="sore_tongue" name="symptoms" value="sore_tongue">
+              <label class="checkbox-label" for="sore_tongue">Sore tongue</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="bleeding_gums" name="symptoms" value="bleeding_gums">
+              <label class="checkbox-label" for="bleeding_gums">Bleeding gums</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="slow_wound_healing" name="symptoms" value="slow_wound_healing">
+              <label class="checkbox-label" for="slow_wound_healing">Slow Healing</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="weakened_immunity" name="symptoms" value="weakened_immunity">
+              <label class="checkbox-label" for="weakened_immunity">Weak Immunity</label>
+          </div>
+
+          <div class="checkWrap">
+              <input type="checkbox" id="bone_joint_pain" name="symptoms" value="bone_joint_pain">
+              <label class="checkbox-label" for="bone_joint_pain">Bone/joint pain</label>
+          </div>
+
+
+
+
+          <!-- Template for Symptoms:
+          <label class="checkbox-label">
             Muscle weakness
             <input type="checkbox" name="symptoms" value="muscle_weakness_vitamin_d">
-        </label>
-        
+        </label> 
         <label class="checkbox-label">
             Depression
             <input type="checkbox" name="symptoms" value="depression_vitamin_d">
         </label>
-        <!-- Add more checkboxes for any additional symptoms you have -->
-        
-        <!-- Add more checkboxes for the remaining symptoms -->
-
-        <button type="button" id="findDeficiency">Find Deficiency</button>
-    </form>
-
-    <div id="result">
-        <h2>Deficiency Results:</h2>
-        <p id="deficiencyList"></p>
+ -->
+      </div>
     </div>
+    <button type="submit" id="submitBtn">Check!</button>
+    </form>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    // Function to check and enforce portrait mode
+    function checkAndEnforcePortrait() {
+      var orientation = window.orientation;
 
-    <script src="vita.js"></script>
+      if (orientation === 90 || orientation === -90) {
+        // Device is in landscape mode; force it back to portrait
+        screen.orientation.lock('portrait').catch(function() {
+          // Handling if the browser does not support orientation locking
+          alert('Portrait mode is enforced.');
+        });
+      }
+    }
+
+    // Initial check
+    checkAndEnforcePortrait();
+
+    // Listen for orientation change events
+    window.addEventListener('orientationchange', checkAndEnforcePortrait);
+  </script>
+
 </body>
 
 </html>

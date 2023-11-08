@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin A:</h2>
+    <div id="infoDiv">
+
+        Vitamin A is a fat-soluble vitamin. Its different forms are often called "retinoids." Vitamin A is needed for
+        the proper growth and functioning of many parts of the body, including the eyes, skin, and immune system. <br>
+        People most commonly use vitamin A for treating aging skin, acne, HIV/AIDS, cataracts, child development,
+        infections, and many other conditions.
+
+      <div id="foodInfo">
+        <h4>Food Sources : </h4>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Liver and other organ meats (such as beef liver, chicken liver)</li>
+              <li>Fish oil</li>
+              <li>Eggs (especially the yolk)</li>
+            </ul>
+          </li>
+          <li><strong>Dairy Products:</strong>
+            <ul id="items">
+              <li>Milk</li>
+              <li>Cheese</li>
+              <li>Butter</li>
+            </ul>
+          </li>
+          <li><strong>Fruits:</strong>
+            <ul id="items">
+              <li>Mangoes</li>
+              <li>Watermelon</li>
+            </ul>
+          </li>
+          <li><strong>Vegetables:</strong>
+            <ul id="items">
+              <li>Carrots</li>
+              <li>Sweet potatoes</li>
+              <li>Spinach</li>
+              <li>Broccoli</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

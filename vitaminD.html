@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin D:</h2>
+    <div id="infoDiv">
+        Vitamin D is a fat-soluble vitamin. It apperas in 2 forms Vitamin D2 (ergocalciferol) and Vitamin D3
+        (cholecalciferol). Vitamin D2 is synthesised by Plants whereas D3 is synthesized by human skin.Vitamin D plays
+        essential role in Bone Health,Muscle Function,Immune System Support,Cell Growth and Regulation. <br>
+        Some studies suggest Vitamin D support cardiovascular health .
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Fatty fish (like salmon, mackerel, and tuna)</li>
+              <li>Fish liver oils </li>
+              <li>Beef liver</li>
+              <li>Egg yolks</li>
+            </ul>
+          </li>
+          <li><strong>Fortified Food(food with additional vitamins):</strong>
+            <ul id="items">
+              <li>Milk</li>
+              <li>Cheese</li>
+              <li>Yogurt</li>
+              <li>cereals</li>
+            </ul>
+          </li>
+          <li><strong>Plant Based:</strong>
+            <ul id="items">
+              <li>Soy</li>
+              <li>Almond</li>
+              <li>Oat milk</li>
+              <li>Orange Juice</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+
+</body>
+
+</html>

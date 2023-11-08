@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin B5:</h2>
+    <div id="infoDiv">
+        Vitamin B5, also known as pantothenic acid, is one of the B-vitamins and is essential for the synthesis and
+        metabolism of carbohydrates, proteins, and fats in the body.<br> It contributes to the wound healing process
+        andis often used in skincare products for its potential benefits to the skin.
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Animal Sources:</strong>
+            <ul id="items">
+              <li>Meat(Chicken,Beef,Pork)</li>
+              <li>Fish</li>
+              <li>Eggs</li>
+            </ul>
+          </li>
+          <li><strong>Dairy Products:</strong>
+            <ul id="items">
+              <li>Milk</li>
+              <li>Cheese</li>
+              <li>Yogurt</li>
+            </ul>
+          </li>
+          <li><strong>Whole Grains:</strong>
+            <ul id="items">
+              <li>Brown Rice</li>
+              <li>Wheat</li>
+            </ul>
+          </li>
+          <li><strong>Vegetables:</strong>
+            <ul id="items">
+              <li>Avacado</li>
+              <li>Sweet potatoes</li>
+              <li>Mushrooms</li>
+              <li>Broccoli</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

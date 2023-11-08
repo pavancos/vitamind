@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial scale=1.0">
+  <title>vitamind</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Istok+Web&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>VitaMin-D</h1>
+  </div>
+  <div class="menu">
+    <button id="menu" onclick="closeThis()"></button>
+  </div>
+  <div id="infoBox">
+    <h2 id="vitTitle">Vitamin K:</h2>
+    <div id="infoDiv">
+        Vitamin K is a fat-soluble vitamin. It plays a crucial role in various bodily functions, particularly in blood clotting , bone metabolism , and heart health . There are two primary forms of Vitamin K : Vitamin K1 (phylloquinone)  and  Vitamin K2 (menaquinone) . Vitamin K is involved in regulating calcium levels in the bones and helps with bone mineralization .
+      <div class="Food">
+        <h3>Food Sources : </h3>
+        <ul id="Food">
+          <li><strong>Vegetables Oils:</strong>
+            <ul id="items">
+              <li>Soybean oil</li>
+              <li>Canola oil</li>
+              <li>olive oil</li>
+            </ul>
+          </li>
+          <li><strong>Green Leafy Vegetables:</strong>
+            <ul id="items">
+              <li>Spinach</li>
+              <li>collard greens</li>
+              <li>Swiss Chard</li>
+              <li>Broccoli</li>
+            </ul>
+          </li>
+          <li><strong>Animal Source:</strong>
+            <ul id="items">
+              <li>Meat</li>
+              <li>Egg</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>
+    function closeThis() {
+      window.close();
+    }
+  </script>
+</body>
+
+</html>
