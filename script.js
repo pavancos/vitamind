@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const selectedSymptoms = Array.from(document.querySelectorAll('input[name="symptoms"]:checked')).map(checkbox => checkbox.value);
         const queryParams = new URLSearchParams();
         selectedSymptoms.forEach(symptom => queryParams.append("symptoms", symptom));
-        const queryString = queryParams.toString(); // string to query
+        const queryString = queryParams.toString();
 
-        window.open(`result.html?${queryString}`, "_blank");// new tab and queries
+        window.open(`result.html?${queryString}`, "_blank");
     });
 });
