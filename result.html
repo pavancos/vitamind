@@ -107,7 +107,6 @@
       var orientation = window.orientation;
 
       if (orientation === 90 || orientation === -90) {
-        // Device is in landscape mode; force it back to portrait
         screen.orientation.lock("portrait");
       }
     });

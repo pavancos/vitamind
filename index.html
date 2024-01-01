@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-euiv="X-UA-Compatible" content="IE=edge">
   <title>vitamind</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+  <div id="google_translate_element"></div>
   <div class="heading">
     <h1>VitaMin-D</h1>
   </div>
@@ -162,26 +164,27 @@
   </div>
   <script type="module" src="script.js"></script>
   <script>
-    // Function to check and enforce portrait mode
     function checkAndEnforcePortrait() {
       var orientation = window.orientation;
 
       if (orientation === 90 || orientation === -90) {
-        // Device is in landscape mode; force it back to portrait
         screen.orientation.lock('portrait').catch(function() {
-          // Handling if the browser does not support orientation locking
           alert('Portrait mode is enforced.');
         });
       }
     }
-
-    // Initial check
     checkAndEnforcePortrait();
-
-    // Listen for orientation change events
     window.addEventListener('orientationchange', checkAndEnforcePortrait);
   </script>
-
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement(
+        {pageLanguage: 'en'},
+        'google_translate_element'
+      );
+    }
+  </script>
 </body>
 
 </html>

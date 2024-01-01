@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const queryParams = new URLSearchParams(window.location.search); //gpt
-  const selectedSymptoms = queryParams.getAll("symptoms"); //gpt
+  const queryParams = new URLSearchParams(window.location.search);
+  const selectedSymptoms = queryParams.getAll("symptoms");
 
   const symptomToVitaminMapping = {
       night_blindness: "vitaminA",
